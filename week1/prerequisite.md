@@ -1,10 +1,10 @@
-# SSH client
+# SSH client on your laptop/machine
 ## Windows
 * https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/
 ## Mac
 * Mac OS X already has built in SSH client called terminal
 
-# Paperspace for GPU machine
+# Paperspace for GPU machine - On cloud
 
 ## About
 * Paperspace is a **GPU** accelerated cloud platform
