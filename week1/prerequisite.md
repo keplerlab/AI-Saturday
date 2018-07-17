@@ -103,21 +103,26 @@ You can ssh into your new machine with the following command:ssh paperspace@184.
 - nano config
 - add these contents to your config file (replace IP address here with your Paperspace IP address)
 
+```
 Host paperspace
      HostName 184.105.2.222
      IdentityFile ~/.ssh/id_rsa
      # StrictHostKeyChecking no  
      User paperspace
      LocalForward 8888 localhost:8888
-here's the nano command for saving file
-ctrl o
-Enter
+```
+- here's the nano command for saving file
+   
+   ```ctrl o
+   Enter
+   ```
 
-here's the nano command for exiting a file
-ctrl x
+- here's the nano command for exiting a file
+```ctrl x
+```
 
-my example of config file
-
+- my example of config file
+```
 % pwd
 /Users/<youruserid>/.ssh
 % cat config
@@ -127,11 +132,13 @@ Host paperspace
      # StrictHostKeyChecking no  
      User paperspace
      LocalForward 8888 localhost:8888
+```
 
 ### Step 5: ssh into Paperspace from local computer
 - ssh paperspace
 - my example
 
+```
 Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-104-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
