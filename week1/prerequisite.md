@@ -78,3 +78,60 @@ Your temporary sign-in password for machine New Machine 1 is: *************
 You can ssh into your new machine with the following command:ssh paperspace@184.105.2.222
 
 ## DON”T FORGET TO CLOSE THE NOTEBOOKS AND SHUTDOWN THE INSTANCE
+
+# SSH client on your laptop/machine for easy Paperspace access
+## Ubuntu (Window bash shell) 
+### Step 1: Install ssh-copy-id
+- If you don't have it already, here's how to install it:
+apt-get install ssh-copy-id
+Step 2: Ensure public keys are available
+cd into ~/.ssh directory
+if you don't have an .ssh directory in your home folder, create it (mkdir ~/.ssh)
+if you don't have an id_rsa.pub file in your ~/.ssh folder, create it (ssh-keygen and hit Enter  3 times)
+Step 3: Copy public key to Paperspace
+replace IP address in syntax below with your own, and run command
+ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.105.2.222
+Step 4: Add Paperspace info to config file
+make sure you are in the right directory
+cd ~/.ssh
+if you don't have a config file, create one. This example creates file using nano editor.
+nano config
+add these contents to your config file (replace IP address here with your Paperspace IP address)
+Host paperspace
+     HostName 184.105.2.222
+     IdentityFile ~/.ssh/id_rsa
+     # StrictHostKeyChecking no  
+     User paperspace
+     LocalForward 8888 localhost:8888
+here's the nano command for saving file
+ctrl o
+Enter
+
+here's the nano command for exiting a file
+ctrl x
+
+my example of config file
+
+% pwd
+/Users/<youruserid>/.ssh
+% cat config
+Host paperspace
+     HostName 184.105.2.222
+     IdentityFile ~/.ssh/id_rsa
+     # StrictHostKeyChecking no  
+     User paperspace
+     LocalForward 8888 localhost:8888
+Step 5: ssh into Paperspace from local computer
+ssh paperspace
+my example
+
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-104-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+Last login: Mon Jan 29 20:53:40 2018 from 10.64.48.1
+(fastai) paperspace@psgyqmt1m:~$
+
+
