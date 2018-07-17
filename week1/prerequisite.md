@@ -19,7 +19,6 @@
 - USAGE:  `$0.65/hr` (P5000)
 - PUBLIC IP ADDRESS:  `$3/month` (single static IP address)
 
-Note:  There is a **$15 credit code you can use: `FASTAI6GKZ`**.  **This code is only for fastai students.**  
 
 ## Paperspace Support
 - Technical support, email support@paperspace.com
