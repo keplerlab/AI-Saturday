@@ -85,7 +85,9 @@ You can ssh into your new machine with the following command:ssh paperspace@184.
 
 ### Step 1: Install ssh-copy-id
 - If you don't have it already, here's how to install it:
-- apt-get install ssh-copy-id
+```
+apt-get install ssh-copy-id
+```
 
 ### Step 2: Ensure public keys are available
 - cd into ~/.ssh directory
@@ -94,13 +96,19 @@ You can ssh into your new machine with the following command:ssh paperspace@184.
 
 ### Step 3: Copy public key to Paperspace
 - replace IP address in syntax below with your own, and run command
-- ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.105.2.222
+```
+ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.105.2.222
+```
 
 ### Step 4: Add Paperspace info to config file
 - make sure you are in the right directory
-- cd ~/.ssh
+```
+cd ~/.ssh
+```
 - if you don't have a config file, create one. This example creates file using nano editor.
-- nano config
+```
+nano config
+```
 - add these contents to your config file (replace IP address here with your Paperspace IP address)
 
 ```
@@ -113,13 +121,15 @@ Host paperspace
 ```
 - here's the nano command for saving file
    
-   ```ctrl o
+   ```
+   ctrl o
    Enter
    ```
 
 - here's the nano command for exiting a file
-```ctrl x
-```
+  ```
+  ctrl x
+  ```
 
 - my example of config file
 ```
@@ -135,7 +145,9 @@ Host paperspace
 ```
 
 ### Step 5: ssh into Paperspace from local computer
-- ssh paperspace
+```
+ssh paperspace
+```
 - my example
 
 ```
@@ -148,4 +160,4 @@ Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-104-generic x86_64)
 Last login: Mon Jan 29 20:53:40 2018 from 10.64.48.1
 (fastai) paperspace@psgyqmt1m:~$
 
-```text
+```
