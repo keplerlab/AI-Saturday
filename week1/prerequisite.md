@@ -79,13 +79,14 @@ You can ssh into your new machine with the following command:ssh paperspace@184.
 ## DON”T FORGET TO CLOSE THE NOTEBOOKS AND SHUTDOWN THE INSTANCE
 
 # SSH client on your laptop/machine for easy Paperspace access
-
-## Ubuntu (Window bash shell) 
-
+ 
 ### Step 1: Install ssh-copy-id
 - If you don't have it already, here's how to install it:
 ```
-apt-get install ssh-copy-id
+apt-get install ssh-copy-id (Unix or cygwin or minwg)
+
+brew install ssh-copy-id (mac)
+
 ```
 
 ### Step 2: Ensure public keys are available
@@ -112,7 +113,7 @@ nano config
 
 ```
 Host paperspace
-     HostName 184.105.2.222
+     HostName <Your public IP>
      IdentityFile ~/.ssh/id_rsa
      # StrictHostKeyChecking no  
      User paperspace
