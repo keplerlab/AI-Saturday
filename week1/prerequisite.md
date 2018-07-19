@@ -94,7 +94,7 @@ brew install ssh-copy-id (mac) ( Assuming you already have homebrew installed on
 ```
 
 ### Step 2: Ensure public keys are available
-- cd into ~/.ssh directory  (~ is home your directory) 
+- cd into ``~/.ssh`` directory  (~ is home your directory) 
 - if you don't have an .ssh directory in your home folder, create it (mkdir .ssh)
 - if you don't have an id_rsa.pub file in your .ssh folder, create it (ssh-keygen and hit Enter  3 times)
 
@@ -181,7 +181,7 @@ STEP 2:
 open git bash from right click context menu
 - go to your Users home directory using cd ~ 
 - create .ssh directory if not there 
-- cd into ~/.ssh directory  (~ is home your directory) 
+- cd into ``~/.ssh directory``  (~ is home your directory) 
 - if you don't have an .ssh directory in your home folder, create it (mkdir .ssh)
 - if you don't have an id_rsa.pub file in your .ssh folder, create it (ssh-keygen and hit Enter  3 times)
 
