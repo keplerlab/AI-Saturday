@@ -89,12 +89,12 @@ You can ssh into your new machine with the following command:ssh paperspace@184.
 ```
 apt-get install ssh-copy-id (Unix)
 
-brew install ssh-copy-id (mac)
+brew install ssh-copy-id (mac) ( Assuming you already have homebrew installed on your Mac) 
 
 ```
 
 ### Step 2: Ensure public keys are available
-- cd into ~/.ssh directory  (~ is home your directory) # WINODWS USERS enter command: cd and create new directory using command mkdir .ssh  
+- cd into ~/.ssh directory  (~ is home your directory) 
 - if you don't have an .ssh directory in your home folder, create it (mkdir .ssh)
 - if you don't have an id_rsa.pub file in your .ssh folder, create it (ssh-keygen and hit Enter  3 times)
 
@@ -170,9 +170,8 @@ Last login: Mon Jan 29 20:53:40 2018 from 10.64.48.1
 
 
 
+# SSH client on your laptop/machine for easy Paperspace access WINDOWS Users
 
-
-##### WINDOWS INSTRUCTIONS SSH client on your laptop/machine for easy Paperspace 
 STEP 1: 
 Install Git for windows with git bash ( git bash includes ssh client as well as other usefull unix tools) from here 
 https://git-scm.com/download/win
@@ -206,7 +205,7 @@ nano config
 ### PLEASE NOTE SOME NETWORKS DO NOT ALLOW 8888 PORT ACCESS FROM THEIR INTRANET THIS CONFIG FILE ACTUALLY FORWORDS 8888 PORT FROM PAPERSPACE MACHINE TO YOUR LOCAL MACHINE
 ```
 
-- add these contents to your config file (replace IP address here with your Paperspace IP address)
+- add these contents to your config file (replace <Your public IP here> with your Paperspace IP address)
 
 Host paperspace
      HostName <Your public IP>
@@ -230,11 +229,12 @@ Host paperspace
 ### Step 5: ssh into Paperspace from local computer using this command 
 ```
 ssh paperspace
-
+```
 
 ### STEP 6: Open jupyter notebook : Make sure jupyter notebook is using port 8888 as this is the port we have actually forwarded/tunneled on our local machine 
+```
 jupyter notebook 
-
+```
 copy paste URL ( keep localhost if inside corporate network or behind any firewall, can use public ip if no firewalled home network ) on browser 
 
 ### STEP 7 :  CHECK IF any existing session of jupyter notebook is running using : do not open new session if any existing session is running 
