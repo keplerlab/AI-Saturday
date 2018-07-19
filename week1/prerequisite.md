@@ -238,8 +238,9 @@ jupyter notebook
 copy paste URL ( keep localhost if inside corporate network or behind any firewall, can use public ip if no firewalled home network ) on browser 
 
 ### STEP 7 :  CHECK IF any existing session of jupyter notebook is running using : do not open new session if any existing session is running 
+```
 jupyter notebook list 
-
+```
 
 
 
