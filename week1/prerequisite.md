@@ -1,6 +1,10 @@
 # SSH client on your laptop/machine
 ## Windows
-* https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/
+
+Install Git for windows with git bash ( git bash includes ssh client as well as other usefull unix tools) from here 
+https://git-scm.com/download/win
+Make sure to also install git bash 
+
 ## Mac
 * Mac OS X already has built in SSH client called terminal
 
