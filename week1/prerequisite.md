@@ -1,6 +1,10 @@
 # SSH client on your laptop/machine
 ## Windows
-* https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/
+
+Install Git for windows with git bash ( git bash includes ssh client as well as other usefull unix tools) from here 
+https://git-scm.com/download/win
+Make sure to also install git bash 
+
 ## Mac
 * Mac OS X already has built in SSH client called terminal
 
@@ -78,21 +82,21 @@ You can ssh into your new machine with the following command:ssh paperspace@184.
 
 ## DON”T FORGET TO CLOSE THE NOTEBOOKS AND SHUTDOWN THE INSTANCE
 
-# SSH client on your laptop/machine for easy Paperspace access
+# SSH client on your laptop/machine for easy Paperspace access MACOS/UNIX/UBUNTU 
  
 ### Step 1: Install ssh-copy-id
 - If you don't have it already, here's how to install it:
 ```
-apt-get install ssh-copy-id (Unix or cygwin or minwg)
+apt-get install ssh-copy-id (Unix)
 
-brew install ssh-copy-id (mac)
+brew install ssh-copy-id (mac) ( Assuming you already have homebrew installed on your Mac) 
 
 ```
 
 ### Step 2: Ensure public keys are available
-- cd into ~/.ssh directory
-- if you don't have an .ssh directory in your home folder, create it (mkdir ~/.ssh)
-- if you don't have an id_rsa.pub file in your ~/.ssh folder, create it (ssh-keygen and hit Enter  3 times)
+- cd into ``~/.ssh`` directory  (~ is home your directory) 
+- if you don't have an .ssh directory in your home folder, create it (mkdir .ssh)
+- if you don't have an id_rsa.pub file in your .ssh folder, create it (ssh-keygen and hit Enter  3 times)
 
 ### Step 3: Copy public key to Paperspace
 - replace IP address in syntax below with your own, and run command
@@ -106,12 +110,13 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.105.2.222
 cd ~/.ssh
 ```
 - if you don't have a config file, create one. This example creates file using nano editor.
-```
+``` If you do not have Nano installed just create an new file config using any text editor 
 nano config
 ```
 - add these contents to your config file (replace IP address here with your Paperspace IP address)
-
+### PLEASE NOTE SOME NETWORKS DO NOT ALLOW 8888 PORT ACCESS FROM THEIR INTRANET THIS CONFIG FILE ACTUALLY FORWORDS 8888 PORT FROM PAPERSPACE MACHINE TO YOUR LOCAL MACHINE
 ```
+
 Host paperspace
      HostName <Your public IP>
      IdentityFile ~/.ssh/id_rsa
@@ -161,3 +166,81 @@ Last login: Mon Jan 29 20:53:40 2018 from 10.64.48.1
 (fastai) paperspace@psgyqmt1m:~$
 
 ```
+
+
+
+
+# SSH client on your laptop/machine for easy Paperspace access WINDOWS Users
+
+STEP 1: 
+Install Git for windows with git bash ( git bash includes ssh client as well as other usefull unix tools) from here 
+https://git-scm.com/download/win
+Make sure to also install git bash 
+
+STEP 2: 
+open git bash from right click context menu
+- go to your Users home directory using cd ~ 
+- create .ssh directory if not there 
+- cd into ``~/.ssh directory``  (~ is home your directory) 
+- if you don't have an .ssh directory in your home folder, create it (mkdir .ssh)
+- if you don't have an id_rsa.pub file in your .ssh folder, create it (ssh-keygen and hit Enter  3 times)
+
+STEP-3: 
+### Step 3: Copy public key to Paperspace
+- replace IP address in syntax below with your own, and run command
+```
+ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.105.2.222
+```
+
+### Step 4: Add Paperspace info to config file
+- make sure you are in the right directory
+```
+cd ~/.ssh
+```
+- if you don't have a config file, create one. This example creates file using nano editor.
+``` If you do not have Nano installed just create an new file config using any text editor 
+nano config
+```
+
+### PLEASE NOTE SOME NETWORKS DO NOT ALLOW 8888 PORT ACCESS FROM THEIR INTRANET THIS CONFIG FILE ACTUALLY FORWORDS 8888 PORT FROM PAPERSPACE MACHINE TO YOUR LOCAL MACHINE
+```
+
+- add these contents to your config file (replace <Your public IP here> with your Paperspace IP address)
+
+Host paperspace
+     HostName <Your public IP>
+     IdentityFile ~/.ssh/id_rsa
+     # StrictHostKeyChecking no  
+     User paperspace
+     LocalForward 8888 localhost:8888
+```
+- here's the nano command for saving file
+   
+   ```
+   ctrl o
+   Enter
+   ```
+
+- here's the nano command for exiting a file
+  ```
+  ctrl x
+  ```
+
+### Step 5: ssh into Paperspace from local computer using this command 
+```
+ssh paperspace
+```
+
+### STEP 6: Open jupyter notebook : Make sure jupyter notebook is using port 8888 as this is the port we have actually forwarded/tunneled on our local machine 
+```
+jupyter notebook 
+```
+copy paste URL ( keep localhost if inside corporate network or behind any firewall, can use public ip if no firewalled home network ) on browser 
+
+### STEP 7 :  CHECK IF any existing session of jupyter notebook is running using : do not open new session if any existing session is running 
+```
+jupyter notebook list 
+```
+
+
+
