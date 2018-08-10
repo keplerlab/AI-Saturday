@@ -26,9 +26,38 @@ git clone https://github.com/Kaggle/kaggle-api
    ## Build a plant seedlings classification using the steps mentioned above.
 1. Create a new notebook.
 2. Download data from here https://www.kaggle.com/c/plant-seedlings-classification/data
+'''
+function to create validation set when there are multiple classes
+
+'''
 
 ## Build a invasive-species-monitoring using the steps mentioned above.
 1. Create a new notebook
 2. Download data from here https://www.kaggle.com/c/invasive-species-monitoring/data
+'''
+Function to create validation set when there is only one class
+def create_val(path, r):
+    """ Takes a path to a dataset and creates a validation set of specified size
+
+    Parameters:
+    -----------
+    path: dataset path
+    r (float): proportion of examples to use for validation, in the range from 0 to 1
+
+    """
+    val_path = os.path.join(os.path.split(path)[0], 'valid')
+    print(val_path)
+                  
+    files = [p for p in glob(os.path.join(path, '*'))]
+    copy_or_move_files(files, path, val_path, r, move=True)
+
+def copy_or_move_files(file_lst, src, dst, r, move=False):
+    do = shutil.move if move else shutil.copyfile
+    os.makedirs(dst)
+    np.random.shuffle(file_lst)
+    for f in file_lst[:int(len(file_lst) * r)]:
+        do(f, os.path.join(dst, os.path.split(f)[1]))
+
+'''
 
 
