@@ -28,16 +28,11 @@ git clone https://github.com/Kaggle/kaggle-api
 2. Download data from here https://www.kaggle.com/c/plant-seedlings-classification/data
 '''
 function to create validation set when there are multiple classes
-
-'''
-
-## Build a invasive-species-monitoring using the steps mentioned above.
-1. Create a new notebook
-2. Download data from here https://www.kaggle.com/c/invasive-species-monitoring/data
-'''
-Function to create validation set when there is only one class
+src_path = PATH + 'train'
 def create_val(path, r):
     """ Takes a path to a dataset and creates a validation set of specified size
+
+    Note - this changes the dataset at <path> by moving files to the val set
 
     Parameters:
     -----------
@@ -47,17 +42,25 @@ def create_val(path, r):
     """
     val_path = os.path.join(os.path.split(path)[0], 'valid')
     print(val_path)
-                  
-    files = [p for p in glob(os.path.join(path, '*'))]
-    copy_or_move_files(files, path, val_path, r, move=True)
+    subdirs = [os.path.split(p)[1] for p in glob(os.path.join(path, '*'))]
+    copy_or_move_files(subdirs, path, val_path, r, move=True)
 
-def copy_or_move_files(file_lst, src, dst, r, move=False):
+def copy_or_move_files(subdir_lst, src, dst, r, move=False):
     do = shutil.move if move else shutil.copyfile
-    os.makedirs(dst)
-    np.random.shuffle(file_lst)
-    for f in file_lst[:int(len(file_lst) * r)]:
-        do(f, os.path.join(dst, os.path.split(f)[1]))
+    for subdir in subdir_lst:
+        os.makedirs(os.path.join(dst, subdir))
+        files = glob(os.path.join(src, subdir, '*'))
+        np.random.shuffle(files)
+        for f in files[:int(len(files) * r)]:
+            #shutil.copy(f, os.path.join(src_path, subdir, os.path.split(f)[1]))
+            do(f, os.path.join(dst, subdir, os.path.split(f)[1]))
+
 
 '''
+
+## Build a invasive-species-monitoring using the steps mentioned above.
+1. Create a new notebook
+2. Download data from here https://www.kaggle.com/c/invasive-species-monitoring/data
+
 
 
