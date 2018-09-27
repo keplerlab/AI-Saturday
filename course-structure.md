@@ -1,17 +1,13 @@
-# AI Saturdays | Course Structure
+# AI Saturdays | Course Structure - Deep Learning Part 1
 
-## Deep Learning Part 1
-
-Course URL: http://course.fast.ai/
-
-#### Section 1 - Preparatory Session
+## Section 1 - Preparatory Session
 
 What do we learn in this section?
 - Working with Jupyter notebook.
 - Numpy for absolute dummies.
 - MLP for dummies.
 
-#### Section 2 - Image Understanding
+## Section 2 - Image Understanding
 
 What do we learn in this section?
 - The "Top-Down" approach to study. (https://youtu.be/IPBSB1HLNLo?t=2m11s)
@@ -43,14 +39,14 @@ Bonus content:
 - ResNet from scratch.
 - Real-Time object detection.
 
-#### Section 3 - Working with Structured Data
+## Section 3 - Working with Structured Data
 
 What do we learn in this section?
 - (Embeddings, categorical & continuous variables, Rossmann Kaggle competition)
 
 Exercise:
 
-#### Section 4 - Natural Language Processing and Recommendation Systems
+## Section 4 - Natural Language Processing and Recommendation Systems
 
 What do we learn in this section?
 - Intro to NLP. (https://youtu.be/gbceqO8PpBg?t=1h23m30s)
