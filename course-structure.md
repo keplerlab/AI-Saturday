@@ -59,6 +59,7 @@ What do we learn in this section?
 - Build a vocabulary. (https://youtu.be/gbceqO8PpBg?t=1h43m45s)
 - Collaborative Filtering with Movielens.
 - Recurrent Neural Nets. (https://youtu.be/sHcLkfRrgoQ?t=1h9m15s, https://youtu.be/sHcLkfRrgoQ?t=1h36m5s, https://youtu.be/sHcLkfRrgoQ?t=1h48m45s, https://youtu.be/H3g26EVADgY?t=3m4s)
+- GRU and LSTM cells for training long sequence of RNNs.
 - Long Short Term Memory. (https://youtu.be/H3g26EVADgY?t=53m40s)
 
 Exercise:
