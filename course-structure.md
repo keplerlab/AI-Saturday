@@ -42,7 +42,9 @@ Bonus content:
 ## Section 3 - Working with Structured Data
 
 What do we learn in this section?
-- (Embeddings, categorical & continuous variables, Rossmann Kaggle competition)
+- Embeddings.
+- Categorical & continuous variables.
+- Rossmann Kaggle competition.
 
 Exercise:
 
