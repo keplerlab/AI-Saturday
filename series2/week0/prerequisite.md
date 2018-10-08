@@ -20,4 +20,19 @@
 
 ### 2/  Python Basics
 
-Python and Numpy basics for absolute dummies: http://cs231n.github.io/python-numpy-tutorial/
+Python basics for absolute dummies: https://www.youtube.com/watch?v=N4mEzFDjqtA
+
+### 3/ Install Git
+
+#### <u>Windows:</u>
+
+- Using Git-scm: https://www.youtube.com/watch?v=SmbAn2_5uGs
+
+#### <u>MacOS:</u>
+
+- Download and Install: https://www.youtube.com/watch?v=__kr-Ew5kbE
+- Using Brew (Terminal): `brew install git`
+
+#### <u>Linux:</u>
+
+(You probably know your way around.)
