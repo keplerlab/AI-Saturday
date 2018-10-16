@@ -1,5 +1,5 @@
-#Completed week0 Exercise. Available in week0 folder
-#Paperspace configured and able to run a notebook. Steps mentioned below
+## Completed week0 Exercise. Available in week0 folder
+## Paperspace configured and able to run a notebook. Steps mentioned below
 
 ## SSH client on your laptop/machine
 ## Windows
