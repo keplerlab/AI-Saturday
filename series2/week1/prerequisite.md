@@ -1,4 +1,7 @@
-# SSH client on your laptop/machine
+#Completed week0 Exercise. Available in week0 folder
+#Paperspace configured and able to run a notebook. Steps mentioned below
+
+## SSH client on your laptop/machine
 ## Windows
 
 Install Git for windows with git bash ( git bash includes ssh client as well as other usefull unix tools) from here 
