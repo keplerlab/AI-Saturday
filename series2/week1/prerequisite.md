@@ -232,6 +232,7 @@ Host paperspace
 ### Step 5: ssh into Paperspace from local computer using this command 
 ```
 ssh paperspace
+cd fastai/courses/dl1
 ```
 
 ### STEP 6: Open jupyter notebook : Make sure jupyter notebook is using port 8888 as this is the port we have actually forwarded/tunneled on our local machine 
