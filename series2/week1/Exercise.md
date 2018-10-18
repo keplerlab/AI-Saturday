@@ -11,10 +11,10 @@
       1. Download the data from google api(https://github.com/hardikvasa/google-images-download).
       2. Download minimum 100 images for each class.
       3. Prepare the data in separate folders.[train and valid] 
-      4. Choose your model.
-      5. Train the model using architecture, dataset with precompute = True
-      6. Use lr_find() to find the highest learning rate where loss is clearly improving
-      7. Train last layer from precomputed activations for 1-2 epochs using learn.fit.
+      4. Instantiate your learner with 'resnet34' model.
+      5. Use lr_find() to find the highest learning rate where loss is clearly improving
+      6. Train the learner with precompute = True for 1-2 epochs using learn.fit. Note the validation set accuracy, Training Loss and Validation Loss. 
+      7. Train the learner again with precompute = False for 1-2 epochs using learn.fit. Note the validation set accuracy, Training Loss and Validation Loss. 
       8. Try improving the accuracy by tuning the hyper-parameters such as Learning Rate, No of Epochs etc.
   
 
