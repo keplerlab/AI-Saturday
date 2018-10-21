@@ -5,15 +5,16 @@
 3. The 3 steps of training.
     1. Preparing the data for training.
         1. Why do we need to prepare the data for training?
-        2. Important properties of the data object from the below code
-        3. 'data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))'
-        4. What is data augmentation and why it is helpful.
+        2. Why the data needs to split between Train and validation?
+        3. Important properties of the data object from the below code
+        4. 'data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))'
+        5. What is data augmentation and why it is helpful.
     2. Setting up the architecture
         1. What are the pre-trained weights. 
         2. Where they came from?
         3. Why they are useful?  
     3. Training the network
-        1. What is batch processing.
+        1. What is batch processing. Why it is helpful? what is the trade off.
         2. What is gradient descent.
         3. What is stochastic gradient descent.
         4. What is SGDR and why it helps. Understanding cycle len and cycle multiplier.
