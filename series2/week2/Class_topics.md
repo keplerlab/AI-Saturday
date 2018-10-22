@@ -6,9 +6,10 @@
     1. Preparing the data for training.
         1. Why do we need to prepare the data for training?
         2. Why the data needs to split between Train and validation?
-        3. Important properties of the data object from the below code
-        4. 'data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))'
-        5. What is data augmentation and why it is helpful.
+        3. How the process looks like for data stored in a CSV file.
+        4. Important properties of the data object from the below code
+        5. 'data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))'
+        6. What is data augmentation and why it is helpful.
     2. Setting up the architecture
         1. What are the pre-trained weights. 
         2. Where they came from?
@@ -23,6 +24,7 @@
             2. Freezing and Unfreezing layers.
     4. Analyzing results
         1. Confusion matrix.
+        2. Creating the confusion matrix in the code.
     5. High level overview of CNN.
     6. Summary 
 
