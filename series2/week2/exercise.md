@@ -2,7 +2,7 @@
 
 ## Watch the Lesson 2 - http://course.fast.ai/lessons/lesson2.html
 
-## participate in following two kaggle competitions
+## Participate in following two kaggle competitions
 
 ### Build a plant seedlings classification using the steps mentioned above.
 1. Create a new notebook.
