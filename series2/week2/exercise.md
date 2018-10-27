@@ -1,8 +1,8 @@
-#Week 2 activities
+# Week 2 activities
 
 ## Watch the Lesson 2 - http://course.fast.ai/lessons/lesson2.html
 
-## participate in following two kaggle competition
+## participate in following two kaggle competitions
 
 ### Build a plant seedlings classification using the steps mentioned above.
 1. Create a new notebook.
@@ -29,7 +29,7 @@
 git clone https://github.com/Kaggle/kaggle-api
 '''
 2. Follow the installations steps mentioned on the github project page.
-3. Download the data using the following commands 
+3. Download the data using following commands 
    '''
    kaggle competitions download -c <REPLACE THE COMPETITION NAME> -f <REPLACE THE FILE NAME>
    ''' 
