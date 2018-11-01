@@ -6,7 +6,8 @@ Topics to be discussed :
     * Creating the confusion matrix in the code.
     * Result visualization 
     * TTA 
-3. Why to Use CNN  
+3. Understnding CNN
+    * Why CNN  
     * Brief history of Image filters 
     * Introduction of convolution 
     * Building a convolution architecture 
