@@ -10,11 +10,7 @@ Topics to be discussed :
     * Why CNN  
     * Brief history of Image filters 
     * Introduction of convolution 
-    * Building a convolution architecture 
-    * Use of CNN architectures in fastai 
-4. what are activation functions ? 
-    * Relu
-    * Softmax 
-5. Some optimization tricks for learning/fine tuning
+     
+4. Some optimization tricks for learning/fine tuning
     * Dropout 
     * Effect of Fully connected network on model size 
