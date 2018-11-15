@@ -7,5 +7,5 @@ Topics to be discussed :
     * Activation functions in convolutions? 
 3. Uderstanding Bias and variances.
 4. Going back to basics
-    * Understanding and appreating derivates.
+    * Derivates basics.
     * Handcrafting a neural network using pytorch. 
