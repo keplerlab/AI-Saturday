@@ -1,4 +1,14 @@
 # Week 4 activities
+## Watch the Lesson 4 - https://course.fast.ai/lessons/lesson4.html from Start to 00:25:00
+
+## Answer these
+# What is the difference between sigmoid and softmax? Hint: - Refer to Lesson 3 video
+# What is dropout? What it is used for Hint: - Listen to Lesson 4 video
+
+## Manually execute the excel 
+# https://github.com/fastai/fastai/blob/master/courses/dl1/excel/conv-example.xlsx
+# https://github.com/fastai/fastai/blob/master/courses/dl1/excel/graddesc.xlsm 
+
 Please complete following Kaggle competition and submit, Next week session you have to ensure 
 submission of these 4 problems : Next session would be hands where students would be asked to complete these 4
 assignments in class itself. 
