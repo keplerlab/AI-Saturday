@@ -1,0 +1,44 @@
+body {
+    background-color: #FCFCFC;
+    color: #000;
+    background-image: url("/imgs/CatDog.jpeg");
+    background-repeat: no-repeat;
+}
+
+.no-display {
+    display: none;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+    padding-left:50px;
+    padding-right:50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #262626;
+}
+
+.content {
+    margin-top: 10em;
+}
+
+button:focus {outline:0;}
+
+.result-label {
+    font-size: 13px;
+}
+
+.bottom-border-span {
+    border-bottom: 1px solid #B5000D;
+    padding-bottom: 10px;
+}
+
+.image-container {
+    margin: 30px;
+}
