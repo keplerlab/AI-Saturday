@@ -1,4 +1,4 @@
-# Week 6 activities
+# Week 7 activities
 
 ## Watch Lesson 4 video from 0:25:0 till 1:45:00 - https://course.fast.ai/lessons/lesson4.html
 ## Watch https://youtu.be/CzdWqFTmn0Y?t=25m25s. This explains the data pre-processing steps. Ignore the RF piece. 
